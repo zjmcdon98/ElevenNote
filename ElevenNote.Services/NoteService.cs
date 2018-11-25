@@ -1,5 +1,5 @@
 ﻿using ElevenNote.Data;
-using ElevenNote.WebMVC.Models;
+using ElevenNote.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ElevenNote.Services
 {
-    class NoteService
+    public class NoteService
     {
         private readonly Guid _userId;
 
@@ -48,7 +48,7 @@ namespace ElevenNote.Services
                         e =>
                             new NoteListItem
                             {
-                                NotedId = e.NoteId,
+                                NoteId = e.NoteId,
                                 Title = e.Title,
                                 CreateUtc = e.CreatedUtc
                             }

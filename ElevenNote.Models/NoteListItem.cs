@@ -4,11 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace ElevenNote.WebMVC.Models
+namespace ElevenNote.Models
 {
     public class NoteListItem
     {
-        public int NotedId { get; set; }
+        public int NoteId { get; set; }
         public string Title { get; set; }
 
         [Display(Name="created")]
