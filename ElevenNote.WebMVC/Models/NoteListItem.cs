@@ -15,8 +15,5 @@ namespace ElevenNote.WebMVC.Models
         public DateTimeOffset CreateUtc { get; set; }
 
         public override string ToString() => Title;
-        {
-            return base.ToString();
-        }
     }
 }

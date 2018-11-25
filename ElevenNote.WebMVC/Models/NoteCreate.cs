@@ -17,8 +17,5 @@ namespace ElevenNote.WebMVC.Models
         public string Content { get; set; }
 
         public override string ToString() => Title;
-        {
-            return base.ToString();
-        }
     }
 }
